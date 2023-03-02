@@ -134,4 +134,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
   },
+
+  title: {
+    textAlign: 'center',
+    marginTop: 60,
+    fontSize: 25,
+    color: '#A0CE4E',
+    fontWeight: 'bold',
+
+  }
 });
