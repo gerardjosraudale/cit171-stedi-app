@@ -56,7 +56,7 @@ const App = () => {
   } else if (loggedInState == loggedInStates.NOT_LOGGED_IN) {
     return (
       <View>
-        <text style={styles.title}>Welcome back!</text>
+        <text style={styles.title}>'Welcome back!'</text>
         <TextInput
           value={phoneNumber}
           onChangeText={setPhoneNumber}
