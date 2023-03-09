@@ -101,9 +101,9 @@ elevation: 4}}>
      <View style={{ marginTop: 50 }}>
       <Button onPress={myCustomerShare} title="Share" />
       <Button onPress={()=>{
-        AsyncStorage.removeItem('sessionToken');
-        props.setLoggedInState('No')
-        title='Logout'></Button>
+        AsyncStorage.removeItem ('sessionToken');
+        props.setLoggedInState('NOT_LOGGED_IN');
+      }} title="logout" />
     </View>
     </CardContent>
     </Card>
@@ -137,13 +137,4 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
   },
-
-  title: {
-    textAlign: 'center',
-    marginTop: 60,
-    fontSize: 25,
-    color: '#A0CE4E',
-    fontWeight: 'bold',
-
-  }
 });
